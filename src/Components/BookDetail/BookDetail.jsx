@@ -45,9 +45,11 @@ const BookDetail = () => {
       
             <div className="border-2 w-full md:w-3/4"></div>
       
-            <p>
-              <span className="font-bold text-black text-lg md:text-xl">Review: </span>{review}
-            </p>
+            <div>
+                <span className="font-bold text-black text-lg md:text-xl">Review: </span>
+                <div>{review}</div> 
+            </div>
+
       
             <p className="flex gap-4 md:gap-8 items-center text-black font-bold">
               <span>Tag</span>

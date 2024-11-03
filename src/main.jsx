@@ -29,13 +29,13 @@ const router = createBrowserRouter([
       },
       {
         path:'books/:bookId',
-        loader: () => fetch('/public/data/booksData.json'),
+        loader: () => fetch('/data/booksData.json'),
         element:<BookDetail></BookDetail>
       },
       {
         path:'listedBooks',
         element: <ListedBook></ListedBook>,
-        loader: () => fetch('/public/data/booksData.json'),
+        loader: () => fetch('/data/booksData.json'),
       },
       {
         path:'pageread',
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
       <RouterProvider router={router} />
-      <ToastContainer/>
+      <ToastContainer />
   </StrictMode>,
 )
 
